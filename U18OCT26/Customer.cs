@@ -13,6 +13,7 @@ namespace U18OCT26
         public int phoneNumber { get; set; }
         public int customerID { get; set; }
         public string email { get; set; }
+        public string shippingAddress { get; set; }
         public bool vipStatus { get; set; }
         public string regDate { get; set; }
 

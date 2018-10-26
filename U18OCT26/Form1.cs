@@ -15,7 +15,6 @@ namespace U18OCT26
         public Form1()
         {
             InitializeComponent();
-
         }
     }
 }
