@@ -17,17 +17,12 @@ namespace U18OCT26
         public bool vipStatus { get; set; }
         public string regDate { get; set; }
 
-        public void EditCustomerDetails()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Register()
         {
             throw new NotImplementedException();
         }
 
-        public void RemoveCustomer()
+        public void ViewList()
         {
             throw new NotImplementedException();
         }
@@ -37,7 +32,12 @@ namespace U18OCT26
             throw new NotImplementedException();
         }
 
-        public void ViewList()
+        public void EditCustomerDetails()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveCustomer()
         {
             throw new NotImplementedException();
         }
