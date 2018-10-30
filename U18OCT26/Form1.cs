@@ -12,9 +12,13 @@ namespace U18OCT26
 {
     public partial class Form1 : Form
     {
+        private ICustomer cust;
+
         public Form1()
         {
             InitializeComponent();
+
+            cust = new Customer();
         }
     }
 }
