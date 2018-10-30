@@ -10,16 +10,16 @@ namespace U18OCT26
     {
         // Details for Customer
         public string name { get; set; }
-        public int phoneNumber { get; set; }
-        public int customerID { get; set; }
+        public string phoneNumber { get; set; }
+        public string customerID { get; set; }
         public string email { get; set; }
         public string shippingAddress { get; set; }
-        public bool vipStatus { get; set; }
+        public string vipStatus { get; set; }
         public string regDate { get; set; }
 
-        public string Register(string name)
+        public string Register(string name, string customerID)
         {
-            return name;
+            return name + customerID;
         }
 
         public void ViewList()

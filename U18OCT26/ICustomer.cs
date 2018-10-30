@@ -8,7 +8,7 @@ namespace U18OCT26
 {
     public interface ICustomer
     {
-        string Register(string name);
+        string Register(string name, string customerID);
         void ViewList();
         void ShowCustomerDetails();
         void EditCustomerDetails();
