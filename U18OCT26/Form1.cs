@@ -12,9 +12,27 @@ namespace U18OCT26
 {
     public partial class Form1 : Form
     {
+
+        private ICustomer cust;
+
         public Form1()
         {
             InitializeComponent();
+
+            cust = new Customer();
+
+            
+
+            button1.Click += new EventHandler(DoStuff);
+
+        }
+
+        private void DoStuff(object sender, EventArgs e)
+        {
+            string name = textBox1.Text;
+
+            listBox1.Items.Add(name);
+
         }
     }
 }

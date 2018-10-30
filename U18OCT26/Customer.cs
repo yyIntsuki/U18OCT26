@@ -17,9 +17,9 @@ namespace U18OCT26
         public bool vipStatus { get; set; }
         public string regDate { get; set; }
 
-        public void Register()
+        public string Register(string name)
         {
-            throw new NotImplementedException();
+            return name;
         }
 
         public void ViewList()
