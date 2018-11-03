@@ -8,38 +8,12 @@ namespace U18OCT26
 {
     class Customer : ICustomer
     {
-        // Details for Customer
-        public string name { get; set; }
-        public string phoneNumber { get; set; }
-        public string customerID { get; set; }
-        public string email { get; set; }
-        public string shippingAddress { get; set; }
-        public string vipStatus { get; set; }
-        public string regDate { get; set; }
+        public string Name { get; set; }
+        public int CustomerID { get; set; }
 
-        public string Register(string name, string customerID)
+        public void Register()
         {
-            return name + customerID;
-        }
-
-        public void ViewList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ShowCustomerDetails()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void EditCustomerDetails()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveCustomer()
-        {
-            throw new NotImplementedException();
+            
         }
     }
 }

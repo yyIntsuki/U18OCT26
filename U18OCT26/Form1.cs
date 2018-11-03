@@ -20,32 +20,15 @@ namespace U18OCT26
             InitializeComponent();
 
             cust = new Customer();
-            List<ICustomer> customers = new List<ICustomer>();
 
             button1.Text = "Register";
-            button1.Click += new EventHandler(DoStuff);
+            button1.Click += new EventHandler(Reg);
 
         }
 
-        private void DoStuff(object sender, EventArgs e)
+        private void Reg(object sender, EventArgs e)
         {
-            // "do" prefix due to not getting confused with variables in Customer class.
-            string doname = textBox1.Text;
-            string douserID = textBox2.Text;
-
-            List<ICustomer> customers = new List<ICustomer>()
-            {
-                new Customer() { name = doname , customerID = douserID}
-            };
- 
-
-            foreach (var item in customers)
-            {
-                listBox1.Items.Add(((Customer)item).name);
-                listBox1.Items.Add(((Customer)item).customerID);
-            }
-            textBox1.Text = string.Empty;
-            textBox1.Focus();
+            cust.Register();
         }
     }
 }
