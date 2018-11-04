@@ -8,14 +8,16 @@ using System.Windows.Forms;
 
 namespace U18OCT26
 {
-    class Customer : Form1, ICustomer
+    class Customer : ICustomer
     {
         public string UserName { get; set; }
         public int CustomerID { get; set; }
-        private List<Customer> customers;
+
+        BindingList<Customer> customers;
 
         public void Register(string name, int id)
         {
+            customers = new BindingList<Customer>();
             foreach (Customer customer in customers)
             {
                 customers.Add(new Customer
