@@ -12,7 +12,6 @@ namespace U18OCT26
 {
     public partial class Form1 : Form
     {
-
         private ICustomer cust;
 
         public Form1()
@@ -28,7 +27,9 @@ namespace U18OCT26
 
         private void Reg(object sender, EventArgs e)
         {
-            cust.Register();
+            cust.Register(textBox1.Text, int.Parse(textBox2.Text));
+            
+            // Show returned value from Customer Class.
         }
     }
 }
