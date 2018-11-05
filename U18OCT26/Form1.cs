@@ -22,7 +22,7 @@ namespace U18OCT26
 
             button1.Text = "Register";
             button1.Click += new EventHandler(Reg);
-            listBox1.DataSource = customers;
+            listBox1.DataSource = Customer.customers;
         }
 
         private void Reg(object sender, EventArgs e)
@@ -30,5 +30,6 @@ namespace U18OCT26
             cust.Register(textBox1.Text, int.Parse(textBox2.Text));
             // Show returned value from Customer Class.
         }
+
     }
 }

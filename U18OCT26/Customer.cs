@@ -13,21 +13,18 @@ namespace U18OCT26
         public string UserName { get; set; }
         public int CustomerID { get; set; }
 
-        BindingList<Customer> customers;
+        public static BindingList<Customer> customers;
 
         public void Register(string name, int id)
         {
-            customers = new BindingList<Customer>();
-            foreach (Customer customer in customers)
+            customers = new BindingList<Customer>
             {
-                customers.Add(new Customer
+                new Customer()
                 {
                     UserName = name,
                     CustomerID = id,
-                });
-
-            // Make this return something to the Form.
-            }
+                }
+            };
         }
     }
 }

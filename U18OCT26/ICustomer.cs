@@ -19,7 +19,7 @@ namespace U18OCT26
 
         void Register(string name, int id);
         // void ViewList();
-        //void ShowCustomerDetails();
+        // void ShowCustomerDetails();
         // void EditCustomerDetails();
         // void RemoveCustomer();
     }
