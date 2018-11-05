@@ -1,0 +1,32 @@
+﻿Syftet är att använda dig av tanken med Interface och att arbeta tillsammans inom teamet med det vi gått igenom avseende programuppbyggnad och samarbete, uppdelning av arbetet.  (Git, GitHub, VS2017, Issues mm)
+
+Uppgiften ska lösas tillsammans per Team och med Git/GitHub/VS2017 och Winforms.
+
+Bakgrund
+Vår kund inom hemleveranser av mat behöver ett enkelt CRM (Customer Relation Management) system för att hålla reda på sina kunder.
+- Registrera (mata in) nya kunder
+- Se en lista över alla kunder med namn
+- Kunna välja en kund och se alla detaljer om den kunden
+- Kunna redigera/uppdatera detaljer om en vald kund
+- Ta bort en kund
+- En kund innehåller uppgifter om namn, mobilnummer, internt idnummer, epost, leveransadress, vip-klassning (ja/nej), datum för registreringen
+
+Uppgift 1
+- Analysera informationen ovanför tillsammans
+- Fundera på hur ni inom teamet ska angripa uppgiften
+- Sätt upp det som behövs för att kunna jobba tillsammans (Git, GitHub, VS2017, Issues mm)
+- Börja bygga en första fungerande lösning "Happy Path"
+- Använd branches, regelbundna commits så man kan följa ert arbete
+
+Uppgift 2
+- Refactoring efter erfarenheter ni fått från Happy Path
+- Anspassa GUI
+- Bygg klart det ni kan enligt kundens önskelista 
+
+TIPS:
+- Identifiera substantiven, verben, adjektiven
+- Ta fram förslag på klass/er
+- Funder på hur Interface kan hjälpa (jmf dagens övning)
+- Spara kunder görs enklast till en array, dvs en List<T>
+- Se till att hantera knapparnas händelser på ett bra enkelt sätt
+- Om man klickar i listboxen heter händelsen SelectedIndexChanged (inte click)
